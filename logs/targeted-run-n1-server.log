@@ -1,0 +1,483 @@
+[153526] 2026/10/05 11:58:30.743684 [INF] Starting nats-server
+[153526] 2026/10/05 11:58:30.743719 [INF]   Version:  2.14.6
+[153526] 2026/10/05 11:58:30.743722 [INF]   Git:      [1aa10f9]
+[153526] 2026/10/05 11:58:30.743725 [DBG]   Go build: go1.26.7
+[153526] 2026/10/05 11:58:30.743727 [INF]   Cluster:  repro
+[153526] 2026/10/05 11:58:30.743728 [INF]   Name:     n1
+[153526] 2026/10/05 11:58:30.743730 [INF]   Node:     fjFyEjc1
+[153526] 2026/10/05 11:58:30.743731 [INF]   ID:       NCCALRXQC7LW3RK5AKKHJNPY2WNCDVCVFHRXVM7U7KDPQ5HHRBFGBKEK
+[153526] 2026/10/05 11:58:30.743735 [INF] Using configuration file: /tmp/repro/work-targeted/n1/nats.conf (sha256:d81dd6b8d8c0fd7248119e312bf6906b399a6bf85f36c43f44406d571fcb41f3)
+[153526] 2026/10/05 11:58:30.743743 [DBG] Created system account: "$SYS"
+[153526] 2026/10/05 11:58:30.744661 [INF] Starting http monitor on 127.0.0.1:24522
+[153526] 2026/10/05 11:58:30.744765 [INF] Starting JetStream
+[153526] 2026/10/05 11:58:30.744833 [DBG] JetStream creating dynamic configuration - 23.22 GB memory, 1.17 TB disk
+[153526] 2026/10/05 11:58:30.744899 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[153526] 2026/10/05 11:58:30.744903 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[153526] 2026/10/05 11:58:30.744904 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[153526] 2026/10/05 11:58:30.744905 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[153526] 2026/10/05 11:58:30.744906 [INF] 
+[153526] 2026/10/05 11:58:30.744907 [INF]          https://docs.nats.io/jetstream
+[153526] 2026/10/05 11:58:30.744908 [INF] 
+[153526] 2026/10/05 11:58:30.744910 [INF] ---------------- JETSTREAM ----------------
+[153526] 2026/10/05 11:58:30.744911 [INF]   Strict:          true
+[153526] 2026/10/05 11:58:30.744913 [INF]   Max Memory:      23.22 GB
+[153526] 2026/10/05 11:58:30.744915 [INF]   Max Storage:     1.17 TB
+[153526] 2026/10/05 11:58:30.744916 [INF]   Store Directory: "/tmp/repro/work-targeted/n1/js/jetstream"
+[153526] 2026/10/05 11:58:30.744923 [INF]   API Level:       4
+[153526] 2026/10/05 11:58:30.744925 [INF] -------------------------------------------
+[153526] 2026/10/05 11:58:30.745012 [DBG]   Exports:
+[153526] 2026/10/05 11:58:30.745015 [DBG]      $JS.API.>
+[153526] 2026/10/05 11:58:30.745112 [DBG] Enabled JetStream for account "$G"
+[153526] 2026/10/05 11:58:30.745117 [DBG]   Max Memory:      -1 B
+[153526] 2026/10/05 11:58:30.745118 [DBG]   Max Storage:     -1 B
+[153526] 2026/10/05 11:58:30.745208 [DBG] JetStream state for account "$G" recovered
+[153526] 2026/10/05 11:58:30.745230 [INF] Starting JetStream cluster
+[153526] 2026/10/05 11:58:30.745232 [DBG] JetStream cluster checking for stable cluster name and peers
+[153526] 2026/10/05 11:58:30.745234 [INF] Creating JetStream metadata controller
+[153526] 2026/10/05 11:58:30.745713 [INF] JetStream cluster bootstrapping
+[153526] 2026/10/05 11:58:30.745719 [DBG] JetStream cluster initial peers: [fjFyEjc1]
+[153526] 2026/10/05 11:58:30.745723 [DBG] Determining expected peer size for JetStream meta group
+[153526] 2026/10/05 11:58:30.745725 [DBG] Adjusting expected peer set size to 3 with 1 known
+[153526] 2026/10/05 11:58:30.758480 [WRN] Healthcheck failed: "failed to be ready for connections after 1ms: server, route"
+[153526] 2026/10/05 11:58:30.761325 [DBG] RAFT [fjFyEjc1 - _meta_] Update peers from leader to map[fjFyEjc1:0x7e30b7a52a0]
+[153526] 2026/10/05 11:58:30.771310 [DBG] RAFT [fjFyEjc1 - _meta_] Started (cluster size 3, quorum 2)
+[153526] 2026/10/05 11:58:30.771330 [DBG] RAFT [fjFyEjc1 - _meta_] Starting campaign
+[153526] 2026/10/05 11:58:30.771348 [INF] Took 26.579371ms to start JetStream
+[153526] 2026/10/05 11:58:30.771381 [INF] Listening for client connections on 127.0.0.1:24322
+[153526] 2026/10/05 11:58:30.771385 [INF] Server is ready
+[153526] 2026/10/05 11:58:30.771405 [DBG] Starting metadata monitor
+[153526] 2026/10/05 11:58:30.771417 [INF] Cluster name is repro
+[153526] 2026/10/05 11:58:30.771438 [INF] Listening for route connections on 127.0.0.1:24422
+[153526] 2026/10/05 11:58:30.771507 [DBG] Trying to connect to route on 127.0.0.1:24422 (127.0.0.1:24422)
+[153526] 2026/10/05 11:58:30.771532 [DBG] Trying to connect to route on 127.0.0.1:24422 (127.0.0.1:24422)
+[153526] 2026/10/05 11:58:30.771579 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153526] 2026/10/05 11:58:30.771591 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153526] 2026/10/05 11:58:30.771611 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153526] 2026/10/05 11:58:30.771646 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153526] 2026/10/05 11:58:30.771768 [DBG] 127.0.0.1:24423 - rid:8 - Route connect msg sent
+[153526] 2026/10/05 11:58:30.771777 [DBG] 127.0.0.1:24423 - rid:9 - Route connect msg sent
+[153526] 2026/10/05 11:58:30.771797 [ERR] Error trying to connect to route (attempt 1): dial tcp 127.0.0.1:24424: connect: connection refused
+[153526] 2026/10/05 11:58:30.771829 [DBG] 127.0.0.1:24422 - rid:10 - Route connect msg sent
+[153526] 2026/10/05 11:58:30.771855 [INF] 127.0.0.1:24423 - rid:8 - Route connection created
+[153526] 2026/10/05 11:58:30.771865 [INF] 127.0.0.1:24423 - rid:9 - Route connection created
+[153526] 2026/10/05 11:58:30.772084 [INF] 127.0.0.1:24422 - rid:10 - Route connection created
+[153526] 2026/10/05 11:58:30.772150 [ERR] Error trying to connect to route (attempt 1): dial tcp 127.0.0.1:24424: connect: connection refused
+[153526] 2026/10/05 11:58:30.772544 [INF] 127.0.0.1:42440 - rid:11 - Route connection created
+[153526] 2026/10/05 11:58:30.772597 [DBG] 127.0.0.1:24422 - rid:12 - Route connect msg sent
+[153526] 2026/10/05 11:58:30.772611 [INF] 127.0.0.1:24422 - rid:12 - Route connection created
+[153526] 2026/10/05 11:58:30.772665 [INF] 127.0.0.1:42432 - rid:13 - Route connection created
+[153526] 2026/10/05 11:58:30.772745 [DBG] 127.0.0.1:24423 - rid:8 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY"
+[153526] 2026/10/05 11:58:30.772783 [DBG] 127.0.0.1:24423 - rid:9 - Sent local subscriptions to route
+[153526] 2026/10/05 11:58:30.772786 [DBG] 127.0.0.1:24423 - rid:9 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY" for account "$SYS"
+[153526] 2026/10/05 11:58:30.772818 [INF] 127.0.0.1:24422 - rid:10 - Router connection closed: Duplicate Route
+[153526] 2026/10/05 11:58:30.772818 [INF] 127.0.0.1:24422 - rid:12 - Router connection closed: Duplicate Route
+[153526] 2026/10/05 11:58:30.772864 [DBG] Detected route to self, ignoring "nats-route://127.0.0.1:24422"
+[153526] 2026/10/05 11:58:30.772871 [DBG] Detected route to self, ignoring "nats-route://127.0.0.1:24422"
+[153526] 2026/10/05 11:58:30.772872 [INF] 127.0.0.1:42440 - rid:11 - Router connection closed: Client Closed
+[153526] 2026/10/05 11:58:30.772893 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153526] 2026/10/05 11:58:30.772898 [INF] 127.0.0.1:42432 - rid:13 - Router connection closed: Client Closed
+[153526] 2026/10/05 11:58:30.772979 [DBG] 127.0.0.1:24423 - rid:14 - Route connect msg sent
+[153526] 2026/10/05 11:58:30.772990 [INF] 127.0.0.1:24423 - rid:14 - Route connection created
+[153526] 2026/10/05 11:58:30.773223 [DBG] 127.0.0.1:24423 - rid:14 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY"
+[153526] 2026/10/05 11:58:30.773338 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153526] 2026/10/05 11:58:30.773423 [DBG] 127.0.0.1:24423 - rid:15 - Route connect msg sent
+[153526] 2026/10/05 11:58:30.773431 [INF] 127.0.0.1:24423 - rid:15 - Route connection created
+[153526] 2026/10/05 11:58:30.773525 [DBG] 127.0.0.1:24423 - rid:15 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY"
+[153526] 2026/10/05 11:58:30.774756 [INF] 127.0.0.1:42450 - rid:16 - Route connection created
+[153526] 2026/10/05 11:58:30.774849 [INF] 127.0.0.1:42452 - rid:17 - Route connection created
+[153526] 2026/10/05 11:58:30.775508 [DBG] 127.0.0.1:42452 - rid:17 - Sent local subscriptions to route
+[153526] 2026/10/05 11:58:30.775514 [DBG] 127.0.0.1:42452 - rid:17 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ" for account "$SYS"
+[153526] 2026/10/05 11:58:30.775587 [DBG] 127.0.0.1:42450 - rid:16 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153526] 2026/10/05 11:58:30.776320 [INF] 127.0.0.1:42454 - rid:18 - Route connection created
+[153526] 2026/10/05 11:58:30.776481 [DBG] 127.0.0.1:42454 - rid:18 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153526] 2026/10/05 11:58:30.776659 [INF] 127.0.0.1:42466 - rid:19 - Route connection created
+[153526] 2026/10/05 11:58:30.776876 [DBG] 127.0.0.1:42466 - rid:19 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153526] 2026/10/05 11:58:30.872050 [WRN] Waiting for routing to be established...
+[153526] 2026/10/05 11:58:30.872072 [DBG] Recovered JetStream cluster metadata
+[153526] 2026/10/05 11:58:30.872082 [DBG] RAFT [fjFyEjc1 - _meta_] Not snapshotting as there are no applied entries
+[153526] 2026/10/05 11:58:30.872096 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:30.872098 [WRN] JetStream has not established contact with a meta leader
+[153526] 2026/10/05 11:58:30.891173 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:30.891187 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.015668 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.015684 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.070324 [DBG] RAFT [fjFyEjc1 - _meta_] Switching to candidate
+[153526] 2026/10/05 11:58:31.090895 [DBG] RAFT [fjFyEjc1 - _meta_] Sending out voteRequest {term:1 lastTerm:0 lastIndex:0 candidate:fjFyEjc1 reply:}
+[153526] 2026/10/05 11:58:31.093660 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteResponse &{term:1 peer:BXScrY9i granted:false empty:true}
+[153526] 2026/10/05 11:58:31.093674 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteRequest &{term:1 lastTerm:0 lastIndex:0 candidate:BXScrY9i reply:$NRG.R.DSFXZSaD}
+[153526] 2026/10/05 11:58:31.093679 [DBG] RAFT [fjFyEjc1 - _meta_] Sending a voteResponse &{term:1 peer:fjFyEjc1 granted:false empty:true} -> "$NRG.R.DSFXZSaD"
+[153526] 2026/10/05 11:58:31.104169 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteResponse &{term:1 peer:44jzkV9D granted:true empty:true}
+[153526] 2026/10/05 11:58:31.137677 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.137692 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.257569 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.257583 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.378987 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.379001 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.500916 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.500931 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.622816 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.622831 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.752846 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.752860 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.772191 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153526] 2026/10/05 11:58:31.772199 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153526] 2026/10/05 11:58:31.772287 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:31.772316 [DBG] 127.0.0.1:24424 - rid:20 - Route connect msg sent
+[153526] 2026/10/05 11:58:31.772320 [DBG] 127.0.0.1:24424 - rid:21 - Route connect msg sent
+[153526] 2026/10/05 11:58:31.772327 [INF] 127.0.0.1:24424 - rid:20 - Route connection created
+[153526] 2026/10/05 11:58:31.772327 [INF] 127.0.0.1:24424 - rid:21 - Route connection created
+[153526] 2026/10/05 11:58:31.772409 [INF] 127.0.0.1:42492 - rid:22 - Route connection created
+[153526] 2026/10/05 11:58:31.772444 [INF] 127.0.0.1:42482 - rid:23 - Route connection created
+[153526] 2026/10/05 11:58:31.772691 [INF] 127.0.0.1:42482 - rid:23 - Router connection closed: Client Closed
+[153526] 2026/10/05 11:58:31.772701 [DBG] 127.0.0.1:24424 - rid:21 - Detected duplicate remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153526] 2026/10/05 11:58:31.772706 [INF] 127.0.0.1:24424 - rid:21 - Router connection closed: Duplicate Route - Remote: n3
+[153526] 2026/10/05 11:58:31.772762 [DBG] 127.0.0.1:24424 - rid:20 - Route pool size reached, closing extra connection to "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153526] 2026/10/05 11:58:31.772767 [DBG] 127.0.0.1:24424 - rid:20 - Detected duplicate remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153526] 2026/10/05 11:58:31.772768 [INF] 127.0.0.1:42492 - rid:22 - Router connection closed: Client Closed
+[153526] 2026/10/05 11:58:31.772769 [INF] 127.0.0.1:24424 - rid:20 - Router connection closed: Duplicate Route - Remote: n3
+[153526] 2026/10/05 11:58:31.779922 [DBG] 127.0.0.1:42454 - rid:18 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.779964 [DBG] 127.0.0.1:24423 - rid:14 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.781114 [DBG] 127.0.0.1:24423 - rid:8 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.814241 [DBG] 127.0.0.1:42450 - rid:16 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.827693 [DBG] 127.0.0.1:42466 - rid:19 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.841999 [DBG] 127.0.0.1:24423 - rid:9 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.874929 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.874944 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:31.894300 [DBG] 127.0.0.1:24423 - rid:15 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.912512 [DBG] 127.0.0.1:42452 - rid:17 - Router Ping Timer
+[153526] 2026/10/05 11:58:31.996696 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:31.996710 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.116913 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.116927 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.236855 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.236873 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.357945 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.357959 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.481515 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.481530 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.606531 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.606545 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.728824 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.728839 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.771715 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:32.853481 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.853495 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:32.976403 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:32.976418 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.099181 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.099194 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.222947 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.222960 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.345645 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.345659 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.468299 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.468315 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.589881 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.589896 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.713956 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.713970 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.771873 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:33.836370 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.836386 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:33.959089 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:33.959102 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.080292 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.080302 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.206279 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.206291 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.357637 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.357653 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.496524 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.496534 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.628783 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.628797 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.761317 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.761330 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:34.772398 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:34.896879 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:34.896891 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.026528 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.026541 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.164040 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.164072 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.297859 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.297879 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.425933 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.425946 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.560212 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.560226 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.697083 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.697097 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.771955 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:35.831233 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.831247 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:35.963428 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:35.963441 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.096042 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.096063 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.229569 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.229583 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.366547 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.366558 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.491164 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.491178 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.622916 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.622929 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.757885 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.757897 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:36.772076 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:36.888881 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:36.888921 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.021392 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.021405 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.154853 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.154867 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.285978 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.285992 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.406879 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.406893 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.527260 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.527274 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.664741 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.664755 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.771475 [DBG] Checking JetStream cluster state
+[153526] 2026/10/05 11:58:37.794778 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.794790 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:37.934220 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:37.934234 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:38.065560 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:38.065573 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:38.189672 [DBG] RAFT [fjFyEjc1 - _meta_] Not current, no commits
+[153526] 2026/10/05 11:58:38.189685 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153526] 2026/10/05 11:58:38.273586 [DBG] RAFT [fjFyEjc1 - _meta_] Sending out voteRequest {term:2 lastTerm:0 lastIndex:0 candidate:fjFyEjc1 reply:}
+[153526] 2026/10/05 11:58:38.284150 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteResponse &{term:2 peer:BXScrY9i granted:true empty:true}
+[153526] 2026/10/05 11:58:38.286789 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteResponse &{term:2 peer:44jzkV9D granted:true empty:true}
+[153526] 2026/10/05 11:58:38.286807 [DBG] RAFT [fjFyEjc1 - _meta_] Switching to leader
+[153526] 2026/10/05 11:58:38.287091 [DBG] RAFT [fjFyEjc1 - _meta_] Decreasing our clustersize: 3 -> 2
+[153526] 2026/10/05 11:58:38.287211 [DBG] RAFT [fjFyEjc1 - _meta_] Added peer "44jzkV9D"
+[153526] 2026/10/05 11:58:38.292509 [INF] Self is new JetStream cluster metadata leader
+[153526] 2026/10/05 11:58:38.292589 [DBG] RAFT [fjFyEjc1 - _meta_] Installing snapshot of 0 bytes [2:2]
+[153526] 2026/10/05 11:58:38.310178 [DBG] RAFT [fjFyEjc1 - _meta_] Expanding our clustersize: 2 -> 3
+[153526] 2026/10/05 11:58:38.312588 [DBG] RAFT [fjFyEjc1 - _meta_] Added peer "BXScrY9i"
+[153526] 2026/10/05 11:58:38.322797 [DBG] RAFT [fjFyEjc1 - _meta_] Installing snapshot of 0 bytes [2:3]
+[153526] 2026/10/05 11:58:38.346721 [DBG] JetStream cluster creating raft group:&{Name:S-R3F-g4LHnWgi Peers:[fjFyEjc1 44jzkV9D BXScrY9i] Storage:File Cluster:repro Preferred:BXScrY9i ScaleUp:false node:<nil>}
+[153526] 2026/10/05 11:58:38.355438 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Update peers from leader to map[44jzkV9D:0x7e30b940120 BXScrY9i:0x7e30b940140 fjFyEjc1:0x7e30b940100]
+[153526] 2026/10/05 11:58:38.365332 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Started (cluster size 3, quorum 2)
+[153526] 2026/10/05 11:58:38.365658 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Update peers from leader to map[44jzkV9D:0x7e30b940120 BXScrY9i:0x7e30b940140 fjFyEjc1:0x7e30b940100]
+[153526] 2026/10/05 11:58:38.365717 [DBG] Starting stream monitor for '$G > S' [S-R3F-g4LHnWgi]
+[153526] 2026/10/05 11:58:38.429306 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Received a voteRequest &{term:1 lastTerm:0 lastIndex:0 candidate:BXScrY9i reply:$NRG.R.ywcO9Gf7}
+[153526] 2026/10/05 11:58:38.429328 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Canceling catchup subscription since we are now up to date
+[153526] 2026/10/05 11:58:38.446667 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Sending a voteResponse &{term:1 peer:fjFyEjc1 granted:true empty:false} -> "$NRG.R.ywcO9Gf7"
+[153526] 2026/10/05 11:58:38.446680 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] AppendEntry updating leader to "BXScrY9i"
+[153526] 2026/10/05 11:58:38.446727 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Update peers from leader to map[44jzkV9D:0x7e30b940120 BXScrY9i:0x7e30b940140 fjFyEjc1:0x7e30b940100]
+[153526] 2026/10/05 11:58:38.462009 [DBG] 127.0.0.1:51690 - cid:28 - Client connection created
+[153526] 2026/10/05 11:58:38.463036 [DBG] 127.0.0.1:51690 - cid:28 - "v1.51.0:go:NATS CLI Version 0.4.0" - Client connection closed: Client Closed
+[153526] 2026/10/05 11:58:38.501924 [DBG] SYSTEM - System connection closed: Internal Client
+[153526] 2026/10/05 11:58:38.502010 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Shutdown
+[153526] 2026/10/05 11:58:38.502201 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Deleted
+[153526] 2026/10/05 11:58:38.502222 [DBG] Exiting stream monitor for '$G > S' [S-R3F-g4LHnWgi]
+[153526] 2026/10/05 11:58:38.502241 [DBG] RAFT [fjFyEjc1 - S-R3F-g4LHnWgi] Deleted
+[153526] 2026/10/05 11:58:38.502246 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[153526] 2026/10/05 11:58:38.502249 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[153526] 2026/10/05 11:58:38.502384 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[153526] 2026/10/05 11:58:38.521555 [DBG] JetStream cluster creating raft group:&{Name:S-R3F-hvNy6RFF Peers:[fjFyEjc1 44jzkV9D BXScrY9i] Storage:File Cluster:repro Preferred:fjFyEjc1 ScaleUp:false node:<nil>}
+[153526] 2026/10/05 11:58:38.533750 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Update peers from leader to map[44jzkV9D:0x7e30b8cc500 BXScrY9i:0x7e30b8cc520 fjFyEjc1:0x7e30b8cc4e0]
+[153526] 2026/10/05 11:58:38.543234 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Started (cluster size 3, quorum 2)
+[153526] 2026/10/05 11:58:38.543248 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Starting campaign
+[153526] 2026/10/05 11:58:38.543267 [DBG] Starting stream monitor for '$G > S' [S-R3F-hvNy6RFF]
+[153526] 2026/10/05 11:58:38.593903 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Switching to candidate
+[153526] 2026/10/05 11:58:38.604662 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Sending out voteRequest {term:1 lastTerm:0 lastIndex:0 candidate:fjFyEjc1 reply:}
+[153526] 2026/10/05 11:58:38.617886 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Received a voteResponse &{term:1 peer:BXScrY9i granted:true empty:false}
+[153526] 2026/10/05 11:58:38.617910 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Switching to leader
+[153526] 2026/10/05 11:58:38.618686 [INF] Starting restore for stream '$G > S'
+[153526] 2026/10/05 11:58:38.619839 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Received a voteResponse &{term:1 peer:44jzkV9D granted:true empty:false}
+[153526] 2026/10/05 11:58:38.623259 [DBG] Finished streaming restore for stream '$G > S'
+[153526] 2026/10/05 11:58:38.623556 [INF] Completed restore of 1.01 KB for stream '$G > S' in 5ms
+[153526] 2026/10/05 11:58:38.623656 [DBG] Stream restore for '$G > S' completed
+[153526] 2026/10/05 11:58:38.623664 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Update peers from leader to map[44jzkV9D:0x7e30b8cc500 BXScrY9i:0x7e30b8cc520 fjFyEjc1:0x7e30b8cc4e0]
+[153526] 2026/10/05 11:58:38.623689 [INF] JetStream cluster new stream leader for '$G > S'
+[153526] 2026/10/05 11:58:38.637558 [INF] Catchup for stream '$G > S' complete (took 0s)
+[153526] 2026/10/05 11:58:38.639388 [INF] Catchup for stream '$G > S' complete (took 0s)
+[153987] 2026/10/05 11:58:39.219036 [INF] Starting nats-server
+[153987] 2026/10/05 11:58:39.219115 [INF]   Version:  2.14.6
+[153987] 2026/10/05 11:58:39.219118 [INF]   Git:      [1aa10f9]
+[153987] 2026/10/05 11:58:39.219121 [DBG]   Go build: go1.26.7
+[153987] 2026/10/05 11:58:39.219122 [INF]   Cluster:  repro
+[153987] 2026/10/05 11:58:39.219123 [INF]   Name:     n1
+[153987] 2026/10/05 11:58:39.219124 [INF]   Node:     fjFyEjc1
+[153987] 2026/10/05 11:58:39.219125 [INF]   ID:       NBQ7YMRRXXZDDFK5VNDNLVITABXGFZAH6MPWM3K22F3B77DSWTTTGVFM
+[153987] 2026/10/05 11:58:39.219180 [INF] Using configuration file: /tmp/repro/work-targeted/n1/nats.conf (sha256:d81dd6b8d8c0fd7248119e312bf6906b399a6bf85f36c43f44406d571fcb41f3)
+[153987] 2026/10/05 11:58:39.219193 [DBG] Created system account: "$SYS"
+[153987] 2026/10/05 11:58:39.219499 [INF] Starting http monitor on 127.0.0.1:24522
+[153987] 2026/10/05 11:58:39.219563 [INF] Starting JetStream
+[153987] 2026/10/05 11:58:39.219579 [DBG] JetStream creating dynamic configuration - 23.22 GB memory, 1.17 TB disk
+[153987] 2026/10/05 11:58:39.219635 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+[153987] 2026/10/05 11:58:39.219638 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+[153987] 2026/10/05 11:58:39.219639 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+[153987] 2026/10/05 11:58:39.219639 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+[153987] 2026/10/05 11:58:39.219645 [INF] 
+[153987] 2026/10/05 11:58:39.219646 [INF]          https://docs.nats.io/jetstream
+[153987] 2026/10/05 11:58:39.219646 [INF] 
+[153987] 2026/10/05 11:58:39.219647 [INF] ---------------- JETSTREAM ----------------
+[153987] 2026/10/05 11:58:39.219648 [INF]   Strict:          true
+[153987] 2026/10/05 11:58:39.219650 [INF]   Max Memory:      23.22 GB
+[153987] 2026/10/05 11:58:39.219652 [INF]   Max Storage:     1.17 TB
+[153987] 2026/10/05 11:58:39.219652 [INF]   Store Directory: "/tmp/repro/work-targeted/n1/js/jetstream"
+[153987] 2026/10/05 11:58:39.219653 [INF]   API Level:       4
+[153987] 2026/10/05 11:58:39.219654 [INF] -------------------------------------------
+[153987] 2026/10/05 11:58:39.219702 [DBG]   Exports:
+[153987] 2026/10/05 11:58:39.219704 [DBG]      $JS.API.>
+[153987] 2026/10/05 11:58:39.219773 [DBG] Enabled JetStream for account "$G"
+[153987] 2026/10/05 11:58:39.219776 [DBG]   Max Memory:      -1 B
+[153987] 2026/10/05 11:58:39.219777 [DBG]   Max Storage:     -1 B
+[153987] 2026/10/05 11:58:39.219784 [DBG] Recovering JetStream state for account "$G"
+[153987] 2026/10/05 11:58:39.219977 [INF]   Starting restore for stream '$G > S'
+[153987] 2026/10/05 11:58:39.220148 [INF]   Restored 5 messages for stream '$G > S' in 0s
+[153987] 2026/10/05 11:58:39.220187 [DBG] JetStream state for account "$G" recovered
+[153987] 2026/10/05 11:58:39.220196 [INF] Starting JetStream cluster
+[153987] 2026/10/05 11:58:39.220197 [DBG] JetStream cluster checking for stable cluster name and peers
+[153987] 2026/10/05 11:58:39.220198 [INF] Creating JetStream metadata controller
+[153987] 2026/10/05 11:58:39.220280 [WRN] Filestore [_meta_] Stream state outdated, last block has additional entries, will rebuild
+[153987] 2026/10/05 11:58:39.220283 [WRN] Filestore [_meta_] Recovering stream state from index errored: prior state file
+[153987] 2026/10/05 11:58:39.220340 [INF] JetStream cluster recovering state
+[153987] 2026/10/05 11:58:39.232880 [DBG] RAFT [fjFyEjc1 - _meta_] Update peers from leader to map[44jzkV9D:0x27d03739d180 BXScrY9i:0x27d03739d1a0 fjFyEjc1:0x27d03739d160]
+[153987] 2026/10/05 11:58:39.238223 [DBG] RAFT [fjFyEjc1 - _meta_] Replaying state of 3 entries
+[153987] 2026/10/05 11:58:39.238275 [DBG] RAFT [fjFyEjc1 - _meta_] Started (cluster size 3, quorum 2)
+[153987] 2026/10/05 11:58:39.238290 [INF] Took 18.724332ms to start JetStream
+[153987] 2026/10/05 11:58:39.238326 [INF] Listening for client connections on 127.0.0.1:24322
+[153987] 2026/10/05 11:58:39.238330 [INF] Server is ready
+[153987] 2026/10/05 11:58:39.238347 [DBG] Starting metadata monitor
+[153987] 2026/10/05 11:58:39.238356 [INF] Cluster name is repro
+[153987] 2026/10/05 11:58:39.238383 [INF] Listening for route connections on 127.0.0.1:24422
+[153987] 2026/10/05 11:58:39.238445 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153987] 2026/10/05 11:58:39.238484 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153987] 2026/10/05 11:58:39.238522 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153987] 2026/10/05 11:58:39.238558 [DBG] Trying to connect to route on 127.0.0.1:24422 (127.0.0.1:24422)
+[153987] 2026/10/05 11:58:39.238573 [DBG] Trying to connect to route on 127.0.0.1:24422 (127.0.0.1:24422)
+[153987] 2026/10/05 11:58:39.238590 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153987] 2026/10/05 11:58:39.238719 [DBG] 127.0.0.1:24423 - rid:11 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.238764 [INF] 127.0.0.1:24423 - rid:11 - Route connection created
+[153987] 2026/10/05 11:58:39.238765 [DBG] 127.0.0.1:24422 - rid:12 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.238773 [INF] 127.0.0.1:24422 - rid:12 - Route connection created
+[153987] 2026/10/05 11:58:39.238773 [DBG] 127.0.0.1:24422 - rid:13 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.238782 [INF] 127.0.0.1:24422 - rid:13 - Route connection created
+[153987] 2026/10/05 11:58:39.238784 [DBG] 127.0.0.1:24423 - rid:14 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.238793 [INF] 127.0.0.1:24423 - rid:14 - Route connection created
+[153987] 2026/10/05 11:58:39.238943 [INF] 127.0.0.1:52446 - rid:15 - Route connection created
+[153987] 2026/10/05 11:58:39.238980 [DBG] 127.0.0.1:24423 - rid:11 - Sent local subscriptions to route
+[153987] 2026/10/05 11:58:39.238984 [DBG] 127.0.0.1:24423 - rid:11 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY" for account "$SYS"
+[153987] 2026/10/05 11:58:39.239010 [DBG] 127.0.0.1:24424 - rid:16 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.239015 [INF] 127.0.0.1:24424 - rid:16 - Route connection created
+[153987] 2026/10/05 11:58:39.239017 [DBG] 127.0.0.1:24424 - rid:17 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.239022 [INF] 127.0.0.1:24424 - rid:17 - Route connection created
+[153987] 2026/10/05 11:58:39.239023 [INF] 127.0.0.1:24422 - rid:12 - Router connection closed: Duplicate Route
+[153987] 2026/10/05 11:58:39.239047 [DBG] Detected route to self, ignoring "nats-route://127.0.0.1:24422"
+[153987] 2026/10/05 11:58:39.239071 [INF] 127.0.0.1:52446 - rid:15 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.239079 [INF] 127.0.0.1:52440 - rid:18 - Route connection created
+[153987] 2026/10/05 11:58:39.239117 [DBG] 127.0.0.1:24424 - rid:16 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153987] 2026/10/05 11:58:39.239137 [DBG] 127.0.0.1:24423 - rid:14 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY"
+[153987] 2026/10/05 11:58:39.239144 [INF] 127.0.0.1:24422 - rid:13 - Router connection closed: Duplicate Route
+[153987] 2026/10/05 11:58:39.239187 [DBG] 127.0.0.1:24424 - rid:17 - Sent local subscriptions to route
+[153987] 2026/10/05 11:58:39.239190 [DBG] 127.0.0.1:24424 - rid:17 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ" for account "$SYS"
+[153987] 2026/10/05 11:58:39.239195 [DBG] Detected route to self, ignoring "nats-route://127.0.0.1:24422"
+[153987] 2026/10/05 11:58:39.239227 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153987] 2026/10/05 11:58:39.239274 [DBG] 127.0.0.1:24424 - rid:19 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.239279 [INF] 127.0.0.1:24424 - rid:19 - Route connection created
+[153987] 2026/10/05 11:58:39.239295 [INF] 127.0.0.1:52440 - rid:18 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.239478 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153987] 2026/10/05 11:58:39.239910 [DBG] 127.0.0.1:24424 - rid:19 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153987] 2026/10/05 11:58:39.240027 [DBG] Trying to connect to route on 127.0.0.1:24424 (127.0.0.1:24424)
+[153987] 2026/10/05 11:58:39.240147 [DBG] 127.0.0.1:24423 - rid:20 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.240216 [INF] 127.0.0.1:24423 - rid:20 - Route connection created
+[153987] 2026/10/05 11:58:39.240268 [DBG] 127.0.0.1:24423 - rid:20 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY"
+[153987] 2026/10/05 11:58:39.242215 [DBG] 127.0.0.1:24424 - rid:21 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.242225 [INF] 127.0.0.1:24424 - rid:21 - Route connection created
+[153987] 2026/10/05 11:58:39.242227 [DBG] Trying to connect to route on 127.0.0.1:24423 (127.0.0.1:24423)
+[153987] 2026/10/05 11:58:39.242295 [DBG] 127.0.0.1:24424 - rid:21 - Registering remote route "ND2MDNMEQT3QJAJGI4OJITELUJKW2V4K6ISBVM55GCUMC4TZW4VI52AQ"
+[153987] 2026/10/05 11:58:39.242403 [DBG] 127.0.0.1:24423 - rid:22 - Route connect msg sent
+[153987] 2026/10/05 11:58:39.242413 [INF] 127.0.0.1:24423 - rid:22 - Route connection created
+[153987] 2026/10/05 11:58:39.242465 [DBG] 127.0.0.1:24423 - rid:22 - Registering remote route "NCG56OSRCYR77GV4JD25CGE5FITDGGJLN7NBJ3ANDJL6VMK7DBQ5C4FY"
+[153987] 2026/10/05 11:58:39.339204 [WRN] Waiting for routing to be established...
+[153987] 2026/10/05 11:58:39.339237 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.339250 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.339290 [DBG] JETSTREAM - JetStream connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.339321 [DBG] Recovered JetStream cluster metadata
+[153987] 2026/10/05 11:58:39.339334 [WRN] Metalayer blocking snapshot starting
+[153987] 2026/10/05 11:58:39.339336 [DBG] RAFT [fjFyEjc1 - _meta_] Installing snapshot of 0 bytes [2:5]
+[153987] 2026/10/05 11:58:39.352912 [WRN] Metalayer blocking snapshot took 0.014s (streams: 0, consumers: 0, compacted: 2.03 KB)
+[153987] 2026/10/05 11:58:39.352946 [WRN] JetStream has not established contact with a meta leader
+[153987] 2026/10/05 11:58:39.664381 [INF] 127.0.0.1:52450 - rid:23 - Route connection created
+[153987] 2026/10/05 11:58:39.664508 [INF] 127.0.0.1:52450 - rid:23 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.665749 [INF] 127.0.0.1:52464 - rid:24 - Route connection created
+[153987] 2026/10/05 11:58:39.665849 [INF] 127.0.0.1:52464 - rid:24 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.704186 [INF] 127.0.0.1:52466 - rid:25 - Route connection created
+[153987] 2026/10/05 11:58:39.704282 [INF] 127.0.0.1:52466 - rid:25 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.710872 [INF] 127.0.0.1:52474 - rid:26 - Route connection created
+[153987] 2026/10/05 11:58:39.710995 [INF] 127.0.0.1:52474 - rid:26 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.746329 [INF] 127.0.0.1:52484 - rid:27 - Route connection created
+[153987] 2026/10/05 11:58:39.746435 [INF] 127.0.0.1:52484 - rid:27 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.747213 [INF] 127.0.0.1:52500 - rid:28 - Route connection created
+[153987] 2026/10/05 11:58:39.747385 [INF] 127.0.0.1:52500 - rid:28 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.752902 [INF] 127.0.0.1:52506 - rid:29 - Route connection created
+[153987] 2026/10/05 11:58:39.752983 [INF] 127.0.0.1:52506 - rid:29 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:39.762813 [INF] 127.0.0.1:52518 - rid:30 - Route connection created
+[153987] 2026/10/05 11:58:39.762966 [INF] 127.0.0.1:52518 - rid:30 - Router connection closed: Client Closed
+[153987] 2026/10/05 11:58:40.238358 [DBG] Checking JetStream cluster state
+[153987] 2026/10/05 11:58:40.254513 [DBG] 127.0.0.1:24424 - rid:19 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.326030 [DBG] 127.0.0.1:24423 - rid:11 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.349332 [DBG] 127.0.0.1:24423 - rid:22 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.390007 [DBG] 127.0.0.1:24424 - rid:16 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.396272 [DBG] 127.0.0.1:24423 - rid:20 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.396312 [DBG] 127.0.0.1:24423 - rid:14 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.402526 [DBG] 127.0.0.1:24424 - rid:21 - Router Ping Timer
+[153987] 2026/10/05 11:58:40.404739 [DBG] 127.0.0.1:24424 - rid:17 - Router Ping Timer
+[153987] 2026/10/05 11:58:41.238591 [DBG] Checking JetStream cluster state
+[153987] 2026/10/05 11:58:42.238429 [DBG] Checking JetStream cluster state
+[153987] 2026/10/05 11:58:43.239193 [DBG] Checking JetStream cluster state
+[153987] 2026/10/05 11:58:44.239023 [DBG] Checking JetStream cluster state
+[153987] 2026/10/05 11:58:44.267947 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:44.386228 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:44.515502 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:44.632671 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:44.752992 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:44.877441 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.017123 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.135662 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.238510 [DBG] Checking JetStream cluster state
+[153987] 2026/10/05 11:58:45.253773 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.372793 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.510701 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.632401 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.749486 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.867261 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:45.984517 [WRN] Healthcheck failed: "JetStream has not established contact with a meta leader"
+[153987] 2026/10/05 11:58:46.005023 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteRequest &{term:3 lastTerm:2 lastIndex:6 candidate:44jzkV9D reply:$NRG.R.yWljP3Yk}
+[153987] 2026/10/05 11:58:46.005044 [DBG] RAFT [fjFyEjc1 - _meta_] Canceling catchup subscription since we are now up to date
+[153987] 2026/10/05 11:58:46.018318 [DBG] RAFT [fjFyEjc1 - _meta_] Sending a voteResponse &{term:3 peer:fjFyEjc1 granted:true empty:false} -> "$NRG.R.yWljP3Yk"
+[153987] 2026/10/05 11:58:46.018650 [DBG] RAFT [fjFyEjc1 - _meta_] AppendEntry updating leader to "44jzkV9D"
+[153987] 2026/10/05 11:58:46.018747 [INF] JetStream cluster new metadata leader: n2/repro
+[153987] 2026/10/05 11:58:46.018878 [DBG] JetStream cluster creating raft group:&{Name:S-R3F-hvNy6RFF Peers:[fjFyEjc1 44jzkV9D BXScrY9i] Storage:File Cluster:repro Preferred:fjFyEjc1 ScaleUp:false node:<nil>}
+[153987] 2026/10/05 11:58:46.019208 [DBG] RAFT [fjFyEjc1 - _meta_] Update peers from leader to map[44jzkV9D:0x27d03739d180 BXScrY9i:0x27d03739d1a0 fjFyEjc1:0x27d03739d160]
+[153987] 2026/10/05 11:58:46.019227 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Update peers from leader to map[44jzkV9D:0x27d0374a2480 BXScrY9i:0x27d0374a2440 fjFyEjc1:0x27d0374a2460]
+[153987] 2026/10/05 11:58:46.028803 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Replaying state of 1 entries
+[153987] 2026/10/05 11:58:46.028891 [DBG] RAFT [fjFyEjc1 - S-R3F-hvNy6RFF] Started (cluster size 3, quorum 2)
+[153987] 2026/10/05 11:58:46.028948 [DBG] Starting stream monitor for '$G > S' [S-R3F-hvNy6RFF]
+[153987] 2026/10/05 11:58:46.028966 [DBG] Exiting stream monitor for '$G > S' [S-R3F-hvNy6RFF]
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x96fd4a]
+
+goroutine 235 [running]:
+github.com/nats-io/nats-server/v2/server.(*stream).processSnapshotDeletes(0x0, 0x27d03732e980)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:10395 +0x2a
+github.com/nats-io/nats-server/v2/server.(*stream).processSnapshot(0x0, 0x27d03732e980, 0x1)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:10542 +0x45
+github.com/nats-io/nats-server/v2/server.(*jetStream).applyStreamEntries(0x27d0374f6000, 0x0, {0xdb01a0, 0x27d0374d2008}, 0x27d03739d2c0, 0x1, 0x27d0375d3c00)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:4406 +0x585
+github.com/nats-io/nats-server/v2/server.(*jetStream).monitorStream(0x27d0374f6000, 0x0, 0x27d0372ba2c0, 0x0)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:3482 +0x31e8
+github.com/nats-io/nats-server/v2/server.(*jetStream).processClusterCreateStream.func1()
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:5548 +0x25
+github.com/nats-io/nats-server/v2/server.(*Server).startGoRoutine.func1()
+	github.com/nats-io/nats-server/v2/server/server.go:4089 +0x32
+created by github.com/nats-io/nats-server/v2/server.(*Server).startGoRoutine in goroutine 11
+	github.com/nats-io/nats-server/v2/server/server.go:4087 +0x129

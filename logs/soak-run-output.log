@@ -1,0 +1,292 @@
+11:38:43.328 cluster up; making streams and backups
+11:38:48.729 backups done; start the delete/restore cycles and the restarts
+11:38:49.278 cycle 1: restore ok
+11:38:49.862 cycle 2: restore ok
+11:38:50.463 cycle 3: restore ok
+11:38:51.705 cycle 4: restore ok
+11:38:51.664 cycle 5: restore ok
+11:38:52.139 cycle 6: restore ok
+11:38:52.682 cycle 7: restore ok
+11:38:53.185 cycle 8: restore ok
+11:38:53.669 cycle 9: restore ok
+11:38:54.172 cycle 10: restore ok
+11:38:54.677 cycle 11: restore ok
+11:38:55.169 cycle 12: restore ok
+11:38:55.643 cycle 13: restore ok
+11:38:55.758 restart: kill -9 n1
+11:38:56.449 restart: n1 started again
+11:39:00.743 restore of S1 failed: nats: error: restore failed: context deadline exceeded
+11:39:00.748 cycle 14: restore stopped
+11:39:00.838 restore of S1 failed: nats: error: restore failed: restore for stream '$G > S1' is stalled (10048)
+11:39:00.841 cycle 15: restore stopped
+11:39:01.277 cycle 16: restore ok
+11:39:01.697 cycle 17: restore ok
+11:39:02.117 cycle 18: restore ok
+11:39:02.536 cycle 19: restore ok
+11:39:02.984 cycle 20: restore ok
+11:39:03.398 cycle 21: restore ok
+11:39:03.561 restart: kill -9 n2
+11:39:04.223 restart: n2 started again
+11:39:08.569 restore of S1 failed: nats: error: could not request Stream info: context deadline exceeded
+11:39:08.572 cycle 22: restore stopped
+11:39:11.316 restart: kill -9 n3
+11:39:12.203 restart: n3 started again
+11:39:19.160 cycle 23: restore ok
+11:39:19.761 restart: kill -9 n1
+11:39:19.530 restart: n1 started again
+11:39:24.963 restore of S1 failed: nats: error: Could not check if the stream already exist: context deadline exceeded
+11:39:24.100 cycle 24: restore stopped
+11:39:24.633 cycle 25: restore ok
+11:39:25.142 cycle 26: restore ok
+11:39:25.657 cycle 27: restore ok
+11:39:26.185 cycle 28: restore ok
+11:39:26.570 restart: kill -9 n2
+11:39:28.504 restart: n2 started again
+11:39:31.574 restore of S3 failed: nats: error: restore failed: context deadline exceeded
+11:39:31.578 cycle 29: restore stopped
+11:39:32.275 cycle 30: restore ok
+11:39:32.487 cycle 31: restore ok
+11:39:32.944 cycle 32: restore ok
+11:39:33.427 cycle 33: restore ok
+11:39:33.884 cycle 34: restore ok
+11:39:34.389 cycle 35: restore ok
+11:39:34.886 cycle 36: restore ok
+11:39:35.364 cycle 37: restore ok
+11:39:35.516 restart: kill -9 n3
+11:39:37.528 restart: n3 started again
+11:39:40.472 restore of S1 failed: nats: error: restore failed: context deadline exceeded
+11:39:40.477 cycle 38: restore stopped
+11:39:40.941 cycle 39: restore ok
+11:39:41.406 cycle 40: restore ok
+11:39:41.876 cycle 41: restore ok
+11:39:42.373 cycle 42: restore ok
+11:39:42.870 cycle 43: restore ok
+11:39:43.427 cycle 44: restore ok
+11:39:44.340 cycle 45: restore ok
+11:39:44.541 cycle 46: restore ok
+11:39:44.651 restart: kill -9 n1
+11:39:46.732 restart: n1 started again
+11:39:49.681 restore of S1 failed: nats: error: Could not check if the stream already exist: context deadline exceeded
+11:39:49.686 cycle 47: restore stopped
+11:39:50.194 cycle 48: restore ok
+11:39:50.664 cycle 49: restore ok
+11:39:51.149 cycle 50: restore ok
+11:39:51.612 cycle 51: restore ok
+11:39:52.964 cycle 52: restore ok
+11:39:52.569 cycle 53: restore ok
+11:39:53.540 cycle 54: restore ok
+11:39:53.548 cycle 55: restore ok
+11:39:53.803 restart: kill -9 n2
+11:39:55.320 restart: n2 started again
+11:39:58.766 restore of S2 failed: nats: error: restore failed: context deadline exceeded
+11:39:58.770 cycle 56: restore stopped
+11:39:59.283 cycle 57: restore ok
+11:39:59.854 cycle 58: restore ok
+11:40:00.338 cycle 59: restore ok
+11:40:00.808 cycle 60: restore ok
+11:40:01.257 cycle 61: restore ok
+11:40:01.697 cycle 62: restore ok
+11:40:02.158 restart: kill -9 n3
+11:40:03.495 restart: n3 started again
+11:40:07.128 restore of S3 failed: nats: error: restore failed: context deadline exceeded
+11:40:07.138 cycle 63: restore stopped
+11:40:10.583 restart: kill -9 n1
+11:40:12.536 restart: n1 started again
+11:40:17.256 restore of S1 failed: nats: error: Stream "S1" already exist
+11:40:17.260 cycle 64: restore stopped
+11:40:17.678 cycle 65: restore ok
+11:40:18.101 cycle 66: restore ok
+11:40:18.595 cycle 67: restore ok
+11:40:19.112 cycle 68: restore ok
+11:40:19.525 cycle 69: restore ok
+11:40:19.585 restart: kill -9 n2
+11:40:20.607 restart: n2 started again
+11:40:24.605 restore of S1 failed: nats: error: restore failed: context deadline exceeded
+11:40:24.611 cycle 70: restore stopped
+11:40:27.634 restart: kill -9 n3
+11:40:29.274 restart: n3 started again
+11:40:29.733 restore of S1 failed: nats: error: restore failed: stream name already in use, cannot restore (10130)
+11:40:29.739 cycle 71: restore stopped
+11:40:30.232 cycle 72: restore ok
+11:40:30.737 cycle 73: restore ok
+11:40:31.230 cycle 74: restore ok
+11:40:31.717 cycle 75: restore ok
+11:40:32.162 cycle 76: restore ok
+11:40:32.592 cycle 77: restore ok
+11:40:33.120 cycle 78: restore ok
+11:40:33.454 cycle 79: restore ok
+11:40:33.915 cycle 80: restore ok
+11:40:34.347 cycle 81: restore ok
+11:40:34.777 cycle 82: restore ok
+11:40:35.232 cycle 83: restore ok
+11:40:35.676 cycle 84: restore ok
+11:40:36.118 cycle 85: restore ok
+11:40:36.320 restart: kill -9 n1
+11:40:37.678 restart: n1 started again
+11:40:39.202 cycle 86: restore ok
+11:40:44.693 cycle 87: restore ok
+11:40:44.795 restart: kill -9 n2
+11:40:46.658 restart: n2 started again
+11:40:49.944 restore of S2 failed: nats: error: Could not check if the stream already exist: context deadline exceeded
+11:40:49.949 cycle 88: restore stopped
+11:40:50.386 cycle 89: restore ok
+11:40:50.822 cycle 90: restore ok
+11:40:51.269 cycle 91: restore ok
+11:40:51.709 cycle 92: restore ok
+11:40:52.197 cycle 93: restore ok
+11:40:52.734 cycle 94: restore ok
+11:40:53.281 cycle 95: restore ok
+11:40:53.741 restart: kill -9 n3
+11:40:55.683 restart: n3 started again
+11:40:58.665 restore of S3 failed: nats: error: restore failed: context deadline exceeded
+11:40:58.670 cycle 96: restore stopped
+11:41:02.807 restart: kill -9 n1
+11:41:03.597 restart: n1 started again
+11:41:08.930 restore of S2 failed: nats: error: Stream "S2" already exist
+11:41:08.934 cycle 97: restore stopped
+11:41:09.444 cycle 98: restore ok
+11:41:09.770 restore of S2 failed: nats: error: restore failed: nats: no responders available for request
+11:41:09.775 cycle 99: restore stopped
+11:41:10.742 restart: kill -9 n2
+11:41:10.998 restart: n2 started again
+11:41:15.200 restore of S2 failed: nats: error: restore failed: context deadline exceeded
+11:41:15.247 cycle 100: restore stopped
+11:41:18.183 restart: kill -9 n3
+./repro.sh: line 106: 130916 Killed                     "$NATS_SERVER" -c "$WORK/n$i/nats.conf" $dbg >> "$WORK/n$i/server.log" 2>&1
+11:41:18.642 restart: n3 started again
+11:41:25.124 restore of S1 failed: nats: error: Stream "S1" already exist
+11:41:25.128 cycle 101: restore stopped
+11:41:25.592 cycle 102: restore ok
+11:41:25.762 restart: kill -9 n1
+11:41:26.846 cycle 103: restore ok
+11:41:26.540 cycle 104: restore ok
+11:41:27.760 restart: n1 started again
+11:41:30.115 cycle 105: restore ok
+11:41:30.641 cycle 106: restore ok
+11:41:31.122 cycle 107: restore ok
+11:41:31.576 cycle 108: restore ok
+11:41:32.382 cycle 109: restore ok
+11:41:32.488 cycle 110: restore ok
+11:41:33.686 cycle 111: restore ok
+11:41:33.444 cycle 112: restore ok
+11:41:33.892 cycle 113: restore ok
+11:41:34.350 cycle 114: restore ok
+11:41:34.857 cycle 115: restore ok
+11:41:34.873 restart: kill -9 n2
+11:41:35.588 restart: n2 started again
+11:41:40.892 cycle 116: restore ok
+11:41:41.427 cycle 117: restore ok
+11:41:41.941 cycle 118: restore ok
+11:41:42.438 cycle 119: restore ok
+11:41:42.670 restart: kill -9 n3
+11:41:43.978 restart: n3 started again
+11:41:47.688 restore of S2 failed: nats: error: Could not check if the stream already exist: context deadline exceeded
+11:41:47.693 cycle 120: restore stopped
+11:41:48.203 cycle 121: restore ok
+11:41:48.666 cycle 122: restore ok
+11:41:49.169 cycle 123: restore ok
+11:41:49.656 cycle 124: restore ok
+11:41:50.114 cycle 125: restore ok
+11:41:50.568 cycle 126: restore ok
+11:41:51.168 restart: kill -9 n1
+11:41:51.132 cycle 127: restore ok
+11:41:52.509 restart: n1 started again
+11:41:59.530 restart: kill -9 n2
+11:41:59.927 restart: n2 started again
+11:42:06.516 restore of S3 failed: nats: error: Stream "S3" already exist
+11:42:06.522 cycle 128: restore stopped
+11:42:06.989 cycle 129: restore ok
+11:42:07.263 restart: kill -9 n3
+11:42:07.867 restart: n3 started again
+11:42:13.406 cycle 130: restore ok
+11:42:13.867 cycle 131: restore ok
+11:42:14.311 cycle 132: restore ok
+11:42:14.753 cycle 133: restore ok
+11:42:14.981 restart: kill -9 n1
+11:42:15.687 restart: n1 started again
+11:42:19.980 restore of S2 failed: nats: error: restore failed: context deadline exceeded
+11:42:19.985 cycle 134: restore stopped
+11:42:20.545 cycle 135: restore ok
+11:42:21.468 cycle 136: restore ok
+11:42:21.534 cycle 137: restore ok
+11:42:22.763 cycle 138: restore ok
+11:42:22.576 cycle 139: restore ok
+11:42:22.755 restart: kill -9 n2
+11:42:23.938 restart: n2 started again
+11:42:27.704 restore of S1 failed: nats: error: restore failed: context deadline exceeded
+11:42:27.709 cycle 140: restore stopped
+11:42:31.343 restart: kill -9 n3
+11:42:32.794 restore of S1 failed: nats: error: Stream "S1" already exist
+11:42:32.798 cycle 141: restore stopped
+11:42:32.866 restart: n3 started again
+11:42:35.966 cycle 142: restore ok
+11:42:36.409 cycle 143: restore ok
+11:42:36.839 cycle 144: restore ok
+11:42:37.370 cycle 145: restore ok
+11:42:37.934 cycle 146: restore ok
+11:42:38.473 cycle 147: restore ok
+11:42:39.217 cycle 148: restore ok
+11:42:39.516 cycle 149: restore ok
+11:42:39.952 restart: kill -9 n1
+11:42:40.698 restart: n1 started again
+11:42:44.926 restore of S3 failed: nats: error: restore failed: context deadline exceeded
+11:42:44.932 cycle 150: restore stopped
+11:42:45.403 cycle 151: restore ok
+11:42:45.900 cycle 152: restore ok
+11:42:46.347 cycle 153: restore ok
+11:42:46.779 cycle 154: restore ok
+11:42:47.221 cycle 155: restore ok
+11:42:47.664 cycle 156: restore ok
+11:42:47.815 restart: kill -9 n2
+11:42:48.685 restart: n2 started again
+11:42:52.744 restore of S1 failed: nats: error: restore failed: context deadline exceeded
+11:42:52.749 cycle 157: restore stopped
+11:42:53.199 cycle 158: restore ok
+11:42:53.624 cycle 159: restore ok
+11:42:54.495 cycle 160: restore ok
+11:42:54.562 cycle 161: restore ok
+11:42:54.989 cycle 162: restore ok
+11:42:55.423 cycle 163: restore ok
+11:42:55.734 restart: kill -9 n3
+11:42:55.848 cycle 164: restore ok
+11:42:57.506 restart: n3 started again
+11:43:01.355 cycle 165: restore ok
+11:43:03.836 cycle 166: restore ok
+11:43:03.604 cycle 167: restore ok
+11:43:04.748 cycle 168: restore ok
+11:43:04.537 restart: kill -9 n1
+11:43:04.555 cycle 169: restore ok
+11:43:06.533 restart: n1 started again
+11:43:12.916 panic after 264 s
+11:43:12.989 PANIC in /tmp/repro/wA/n1/server.log:
+[141388] 2026/10/05 11:43:11.015933 [DBG] RAFT [fjFyEjc1 - _meta_] Received a voteRequest &{term:18 lastTerm:17 lastIndex:949 candidate:BXScrY9i reply:$NRG.R.JZYVuSdm}
+[141388] 2026/10/05 11:43:11.015989 [DBG] RAFT [fjFyEjc1 - _meta_] Canceling catchup subscription since we are now up to date
+[141388] 2026/10/05 11:43:11.033106 [DBG] RAFT [fjFyEjc1 - _meta_] Sending a voteResponse &{term:18 peer:fjFyEjc1 granted:true empty:false} -> "$NRG.R.JZYVuSdm"
+[141388] 2026/10/05 11:43:11.033408 [DBG] RAFT [fjFyEjc1 - _meta_] AppendEntry updating leader to "BXScrY9i"
+[141388] 2026/10/05 11:43:11.033455 [INF] JetStream cluster new metadata leader: n3/repro
+[141388] 2026/10/05 11:43:11.033542 [DBG] RAFT [fjFyEjc1 - _meta_] Update peers from leader to map[44jzkV9D:0x2ba342322c0 BXScrY9i:0x2ba34232300 fjFyEjc1:0x2ba342322e0]
+[141388] 2026/10/05 11:43:11.033541 [DBG] JetStream cluster creating raft group:&{Name:S-R3F-0UW2lLmr Peers:[44jzkV9D fjFyEjc1 BXScrY9i] Storage:File Cluster:repro Preferred:fjFyEjc1 ScaleUp:false node:<nil>}
+[141388] 2026/10/05 11:43:11.033806 [DBG] RAFT [fjFyEjc1 - S-R3F-0UW2lLmr] Update peers from leader to map[44jzkV9D:0x2ba3447c2c0 BXScrY9i:0x2ba3447c2a0 fjFyEjc1:0x2ba3447c2e0]
+[141388] 2026/10/05 11:43:11.042912 [DBG] RAFT [fjFyEjc1 - S-R3F-0UW2lLmr] Replaying state of 1 entries
+[141388] 2026/10/05 11:43:11.042984 [DBG] RAFT [fjFyEjc1 - S-R3F-0UW2lLmr] Started (cluster size 3, quorum 2)
+[141388] 2026/10/05 11:43:11.043021 [DBG] Starting stream monitor for '$G > S3' [S-R3F-0UW2lLmr]
+[141388] 2026/10/05 11:43:11.043041 [DBG] Exiting stream monitor for '$G > S3' [S-R3F-0UW2lLmr]
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x96fd4a]
+
+goroutine 241 [running]:
+github.com/nats-io/nats-server/v2/server.(*stream).processSnapshotDeletes(0x0, 0x2ba341b6440)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:10395 +0x2a
+github.com/nats-io/nats-server/v2/server.(*stream).processSnapshot(0x0, 0x2ba341b6440, 0x1)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:10542 +0x45
+github.com/nats-io/nats-server/v2/server.(*jetStream).applyStreamEntries(0x2ba342ea000, 0x0, {0xdb01a0, 0x2ba34174708}, 0x2ba34233d40, 0x1, 0x2ba34375c00)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:4406 +0x585
+github.com/nats-io/nats-server/v2/server.(*jetStream).monitorStream(0x2ba342ea000, 0x0, 0x2ba344640b0, 0x0)
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:3482 +0x31e8
+github.com/nats-io/nats-server/v2/server.(*jetStream).processClusterCreateStream.func1()
+	github.com/nats-io/nats-server/v2/server/jetstream_cluster.go:5548 +0x25
+github.com/nats-io/nats-server/v2/server.(*Server).startGoRoutine.func1()
+	github.com/nats-io/nats-server/v2/server/server.go:4089 +0x32
+created by github.com/nats-io/nats-server/v2/server.(*Server).startGoRoutine in goroutine 121
+	github.com/nats-io/nats-server/v2/server/server.go:4087 +0x129
+rc=0
